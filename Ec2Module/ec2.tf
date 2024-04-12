@@ -1,13 +1,13 @@
-/*resource "aws_instance" "instabce1" {
+resource "aws_instance" "instabce1" {
     instance_type = "t2.micro"
-    ami = "ami-0440d3b780d96b29d"
+    ami = data.aws_ami.windows.id  
     tags = {
       "name" = "production"
     }
   
 }
 
-
+/*
 resource "aws_ebs_volume" "myebs" {
   availability_zone = aws_instance.instabce1.availability_zone
   size = 8
