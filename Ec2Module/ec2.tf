@@ -1,10 +1,7 @@
 resource "aws_instance" "instance1" {
     instance_type = "t2.micro"
     ami = data.aws_ami.windows.id  
-    tags = {
-      "Environment" = "prod"
-    }
-  
+ 
 }
 
 /*
