@@ -1,4 +1,4 @@
 resource "aws_s3_bucket" "testbkt-1" {
-  bucket = "myawsbkt-rkm-pmn"
+  bucket = "myawsbkt-rkm-pmnabc"
 
 }

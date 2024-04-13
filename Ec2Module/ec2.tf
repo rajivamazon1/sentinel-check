@@ -1,4 +1,4 @@
-resource "aws_instance" "instance1" {
+resource "aws_instance" "instance1instance2" {
     instance_type = "t2.micro"
     ami = data.aws_ami.windows.id  
  
